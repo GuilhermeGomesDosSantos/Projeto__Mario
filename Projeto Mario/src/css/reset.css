@@ -1,0 +1,16 @@
+/* tudo que vem antes da chave({}), chamamos de seletor, e o que vai dentro da chave é os elementos que estão na tela
+*/
+* {
+    margin: 0;
+    padding: 0;/*padding é o espaçamento interno do elemento*/
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+

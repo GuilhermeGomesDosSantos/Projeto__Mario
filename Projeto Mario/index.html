@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--No head, são coisas que o usuario quase não vê,
+    informações referentes a pagina que quase não aparecem para o usuario -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./src/imagens/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    
+    <title>Super Mario Bros - O Filme</title>
+
+</head>
+<body><!--body tem todo o conteudo-->
+
+    <div class="fundo_video">
+        <video class="video" autoplay Loop muted><!--tag de video, 'autoplay vai dizer pro video tocar sozinho'-->
+            <source src="./src/video/video-mario.mp4" type="video/mp4"><fonte do video, vai buscar o video>
+        </video>
+    </div>
+    <header class="cabecalho"><!--class="", vamos dar um nome para a nossa classe,
+    classe é um atributo de uma tag, é um identificador de uma tag, a tag pode ter varios atributos a classe é uma delas-->
+        <a>
+            <img class="Logo" src="./src/imagens/logo-chapeu-mario.png"
+            alt="logo chapéu Mario"><!--é aonde que fica o caminho até a nossa imagem, 'alt', vamos descrever o que é essa imagem-->
+        
+        </a><!--tag de link-->
+        <nav><!--tag de navegação-->
+            <ul class="menu"><!--é uma lista de intens desordenada-->
+                <li><a href="#">Home</a></li><!--itens da lista-->
+                <li><a href="#">Detalhes</a></li>
+            </ul>
+        </nav>
+    </header><!--vão ser escrito tags dentro do header-->
+    <main class="container">
+        <div class="informacoes"><!--A tag <div> define uma divisão ou seção em um documento HTML .
+O elemento <div> é frequentemente usado como um contêiner para outros elementos HTML para estilizá-los com CSS ou para executar determinadas tarefas com JavaScript -->
+            <img class="imagem_titulo" src="./src/imagens/titulo.png" alt="imagem do titulo do filme">
+            <p class="descricao">Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares.</p>
+                <button class="botao_trailer"><!--tag de botão-->
+                    Veja o trailer</button>
+        </div>
+        <img class="mario" src="./src/imagens/super-mario-chars.png"/>
+
+        <div class="modal">
+            <div class="conteudo_modal">
+                <span class="fechar_modal">X</span>
+					<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Cb4WV4aXBpk" title="Trailer oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+        </div>
+    </main><!--coloca o conteudo principal dentro da tag main-->
+    <script src="./src/JS/index.js"></script>
+</body>
+</html>
